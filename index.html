@@ -33,6 +33,11 @@
       <a href="#" class="nav-link">Suscripciones</a>
       <a href="#" class="nav-link">Juegos y Trivias</a>
       <a href="#" class="nav-link">Medicamentos</a>
+      <!-- Acciones visibles solo en mobile dentro del menú -->
+      <div class="nav-mobile-actions">
+        <a href="#" class="nav-link" style="border:none; padding:0;">Iniciar sesión</a>
+        <a href="#" class="btn-primary-sm">Registrarse</a>
+      </div>
     </div>
 
     <div class="nav-actions">
@@ -87,7 +92,7 @@
         <div class="hero-price-wrap">
           <div class="hero-price-badge">
             <span class="hero-price-amount">MX$480<span class="hero-price-period">/año</span></span>
-            <span class="hero-price-detail">$40/mes · IVA incluido · Renovación automática</span>
+            <span class="hero-price-detail">$40/mes · IVA incluido · Renovación automática · <a href="#calculadora" class="hero-price-calc-link">¿Cuánto ahorras? →</a></span>
           </div>
         </div>
 
@@ -1035,6 +1040,31 @@
   </footer>
 
 </main>
+
+<!-- ══════════════════════════════════════════════════════════
+     WIDGET WHATSAPP — Soporte humano flotante
+══════════════════════════════════════════════════════════ -->
+<a id="wa-widget"
+   href="https://wa.me/521XXXXXXXXXX?text=Hola%20equipo%20Soy%2B%2C%20tengo%20algunas%20dudas%20sobre%20la%20membres%C3%ADa%20anual%20y%20me%20gustar%C3%ADa%20que%20alguien%20me%20ayude."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Habla con un asesor por WhatsApp">
+
+  <!-- Ícono WhatsApp -->
+  <span class="wa-icon" aria-hidden="true">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882a.5.5 0 00.606.61l6.207-1.633A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.876 9.876 0 01-5.031-1.374l-.36-.214-3.733.982.993-3.64-.235-.374A9.869 9.869 0 012.106 12C2.106 6.533 6.533 2.106 12 2.106c5.468 0 9.894 4.427 9.894 9.894 0 5.468-4.426 9.894-9.894 9.894z"/>
+    </svg>
+  </span>
+
+  <!-- Texto del pill -->
+  <span class="wa-text">¿Dudas? Habla con un asesor</span>
+
+  <!-- Punto verde "en línea" -->
+  <span class="wa-online" aria-hidden="true"></span>
+
+</a>
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/calculadora.js"></script>
