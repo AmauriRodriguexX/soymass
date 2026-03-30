@@ -667,6 +667,152 @@
   </section>
 
 
+  <!-- ══════════════════════════════════════════════════════════
+       CALCULADORA DE AHORRO
+  ══════════════════════════════════════════════════════════ -->
+  <section id="calculadora" class="bg-section-dark section-divider" style="padding:4.5rem 1.5rem;">
+    <div class="container">
+
+      <!-- Header -->
+      <div style="text-align:center; margin-bottom:2.5rem;">
+        <span class="hero-eyebrow" style="display:inline-block;">Compruébalo tú mismo</span>
+        <h2 class="font-title" style="font-size:clamp(1.75rem,4vw,2.6rem); font-weight:700; color:var(--color-base-content); line-height:1.2; margin:0.75rem 0 0.75rem;">
+          ¿Cuánto podrías <span style="color:var(--color-success);">ahorrar</span> con Soy+?
+        </h2>
+        <p style="font-size:1rem; color:var(--color-base-content); opacity:0.65; max-width:500px; margin:0 auto; line-height:1.7;">
+          Mueve los deslizadores según tu gasto habitual y ve el ahorro en tiempo real.
+        </p>
+      </div>
+
+      <div id="calc-grid">
+
+        <!-- ── Columna izquierda: Sliders ── -->
+        <div style="display:flex; flex-direction:column; gap:1.25rem;">
+
+          <!-- Slider 1: Medicamentos -->
+          <div class="calc-card">
+            <div class="calc-card-header">
+              <div class="calc-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="calc-label">Medicamentos con envío</p>
+                <p class="calc-sublabel">Ahorra el 25% en cada pedido</p>
+              </div>
+            </div>
+            <p class="calc-question">¿Cuánto gastas al mes en farmacia?</p>
+            <div class="calc-value-display">
+              <span id="calc-pharma-val">$0 MXN</span>
+              <span class="calc-freq">/ mes</span>
+            </div>
+            <div class="calc-slider-row">
+              <button class="calc-stepper" data-target="pharma" data-dir="-1" aria-label="Reducir gasto en farmacia">−</button>
+              <input type="range" id="calc-pharma" class="calc-range" min="0" max="5000" step="100" value="0" aria-label="Gasto mensual en farmacia">
+              <button class="calc-stepper" data-target="pharma" data-dir="1" aria-label="Aumentar gasto en farmacia">+</button>
+            </div>
+            <div class="calc-range-labels"><span>$0</span><span>$5,000</span></div>
+          </div>
+
+          <!-- Slider 2: Entretenimiento -->
+          <div class="calc-card">
+            <div class="calc-card-header">
+              <div class="calc-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="calc-label">Entretenimiento</p>
+                <p class="calc-sublabel">Ahorra el 40% · Cinemex y Aztlán</p>
+              </div>
+            </div>
+            <p class="calc-question">¿Cuánto gastas al mes en cine y salidas?</p>
+            <div class="calc-value-display">
+              <span id="calc-entret-val">$0 MXN</span>
+              <span class="calc-freq">/ mes</span>
+            </div>
+            <div class="calc-slider-row">
+              <button class="calc-stepper" data-target="entret" data-dir="-1" aria-label="Reducir gasto en entretenimiento">−</button>
+              <input type="range" id="calc-entret" class="calc-range" min="0" max="3000" step="100" value="0" aria-label="Gasto mensual en entretenimiento">
+              <button class="calc-stepper" data-target="entret" data-dir="1" aria-label="Aumentar gasto en entretenimiento">+</button>
+            </div>
+            <div class="calc-range-labels"><span>$0</span><span>$3,000</span></div>
+          </div>
+
+          <!-- Slider 3: Educación -->
+          <div class="calc-card">
+            <div class="calc-card-header">
+              <div class="calc-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="calc-label">Cursos y Educación</p>
+                <p class="calc-sublabel">Ahorra el 10% · ITAM y aliados</p>
+              </div>
+            </div>
+            <p class="calc-question">¿Cuánto inviertes al año en cursos o diplomados?</p>
+            <div class="calc-value-display">
+              <span id="calc-educ-val">$0 MXN</span>
+              <span class="calc-freq">/ año</span>
+            </div>
+            <div class="calc-slider-row">
+              <button class="calc-stepper" data-target="educ" data-dir="-1" aria-label="Reducir inversión en educación">−</button>
+              <input type="range" id="calc-educ" class="calc-range" min="0" max="50000" step="1000" value="0" aria-label="Inversión anual en educación">
+              <button class="calc-stepper" data-target="educ" data-dir="1" aria-label="Aumentar inversión en educación">+</button>
+            </div>
+            <div class="calc-range-labels"><span>$0</span><span>$50,000</span></div>
+          </div>
+
+        </div>
+
+        <!-- ── Columna derecha: Panel de resultados ── -->
+        <div id="calc-results">
+
+          <div class="calc-results-header">
+            <p>Tu ahorro estimado</p>
+            <div class="calc-result-row">
+              <span class="calc-result-label">Al mes</span>
+              <span class="calc-result-amount" id="calc-res-monthly">$0 MXN</span>
+            </div>
+            <div class="calc-result-sep"></div>
+            <div class="calc-result-row">
+              <span class="calc-result-label">Al año</span>
+              <span class="calc-result-amount" id="calc-res-annual">$0 MXN</span>
+            </div>
+          </div>
+
+          <div class="calc-roi-section">
+            <div class="calc-roi-bar-track">
+              <div id="calc-roi-bar-fill"></div>
+            </div>
+            <p class="calc-roi-msg" id="calc-roi-msg">
+              Mueve los deslizadores para ver cuánto puedes ahorrar.
+            </p>
+          </div>
+
+          <div id="calc-cta-wrap" style="opacity:0.5;">
+            <a href="https://www.soymas.la/membresias" class="calc-cta-btn" rel="noopener noreferrer">
+              Suscríbete por $480/año
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <p class="calc-cta-note">$40/mes · IVA incluido · Cancela cuando quieras</p>
+          </div>
+
+        </div>
+        <!-- /calc-results -->
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- ── SECTION 3: La más vista / La favorita ── -->
   <section class="bg-section-1" style="padding:2.5rem 1.5rem;">
     <div class="container">
@@ -891,5 +1037,6 @@
 </main>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/calculadora.js"></script>
 </body>
 </html>
