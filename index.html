@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soy+ | Tu espacio para vivir más</title>
+
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://use.typekit.net/qru4ffo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════════════════ -->
+<nav class="glass-nav font-title">
+  <div class="nav-inner">
+
+    <a href="#" class="nav-logo">
+      <img src="assets/img/logos/transparente_blanco.png" alt="Soy+">
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#" class="nav-link">Contenido</a>
+      <a href="#" class="nav-link">Beneficios</a>
+      <a href="#" class="nav-link">Suscripciones</a>
+      <a href="#" class="nav-link">Juegos y Trivias</a>
+      <a href="#" class="nav-link">Medicamentos</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#" class="nav-link" id="nav-login">Iniciar sesión</a>
+      <a href="#" class="btn-primary-sm" id="nav-register">Registrarse</a>
+      <button class="btn-ghost-circle" id="menu-btn">
+        <svg style="width:22px;height:22px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     MAIN
+══════════════════════════════════════════════════════════ -->
+<main style="overflow:hidden; padding-bottom:3.5rem;">
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO — Above the fold: valor Soy+ + slider de beneficios
+  ══════════════════════════════════════════════════════════ -->
+  <section class="bg-section-hero" id="hero">
+
+    <!-- Imagen de fondo con overlay -->
+    <div class="hero-bg-img">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+           alt="Familia Soy+" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-inner">
+
+      <!-- ── Columna izquierda: Copy + CTAs ── -->
+      <div class="hero-copy">
+        <span class="hero-eyebrow">Tu membresía de bienestar</span>
+
+        <h1 class="font-title hero-title">
+          Vive más,<br>
+          <span class="hero-title-accent">gasta menos</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Soy+ es la plataforma de beneficios pensada para ti: salud, entretenimiento,
+          herramientas y descuentos en un solo lugar.
+        </p>
+
+        <!-- Precio -->
+        <div class="hero-price-wrap">
+          <div class="hero-price-badge">
+            <span class="hero-price-amount">MX$480<span class="hero-price-period">/año</span></span>
+            <span class="hero-price-detail">$40/mes · IVA incluido · Renovación automática</span>
+          </div>
+        </div>
+
+        <!-- Slider de beneficios -->
+        <div class="hero-slider-wrap">
+
+          <div class="hero-benefit-track" id="hero-benefit-track">
+
+            <div class="hero-benefit-card active" data-category="seguros">
+              <div class="hero-benefit-logo hero-benefit-logo--woow">
+                <img src="assets/img/logos/woow.jpg" alt="WOOW" loading="eager" onerror="this.style.opacity='0'">
+                <span class="hero-benefit-logo-fallback">woow</span>
+              </div>
+              <div class="hero-benefit-content">
+                <div class="hero-benefit-body">
+                  <h4 class="font-title">Asistencias, seguros y servicios integrales</h4>
+                </div>
+                <div class="hero-benefit-footer">
+                  <a href="https://www.soymas.la/beneficios" class="hero-benefit-cta" rel="noopener noreferrer">Ver detalle →</a>
+                  <span class="hero-benefit-cat cat-seguros">Seguros</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-benefit-card" data-category="seguros">
+              <div class="hero-benefit-logo hero-benefit-logo--isure">
+                <img src="assets/img/logos/isure.jpg" alt="iSURE" loading="lazy" onerror="this.style.opacity='0'">
+                <span class="hero-benefit-logo-fallback">iiSURE</span>
+              </div>
+              <div class="hero-benefit-content">
+                <div class="hero-benefit-body">
+                  <h4 class="font-title">Protección integral e inteligente</h4>
+                </div>
+                <div class="hero-benefit-footer">
+                  <a href="https://www.soymas.la/beneficios" class="hero-benefit-cta" rel="noopener noreferrer">Ver detalle →</a>
+                  <span class="hero-benefit-cat cat-seguros">Seguros</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-benefit-card" data-category="finanzas">
+              <div class="hero-benefit-logo hero-benefit-logo--itam">
+                <img src="assets/img/logos/itam.jpg" alt="ITAM" loading="lazy" onerror="this.style.opacity='0'">
+                <span class="hero-benefit-logo-fallback">ITAM</span>
+              </div>
+              <div class="hero-benefit-content">
+                <div class="hero-benefit-body">
+                  <h4 class="font-title">10% de descuento en diplomados y cursos</h4>
+                </div>
+                <div class="hero-benefit-footer">
+                  <a href="https://www.soymas.la/beneficios" class="hero-benefit-cta" rel="noopener noreferrer">Ver detalle →</a>
+                  <span class="hero-benefit-cat cat-finanzas">Educación</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-benefit-card" data-category="entretenimiento">
+              <div class="hero-benefit-logo hero-benefit-logo--cinemex">
+                <img src="assets/img/logos/cinemex.jpg" alt="Cinemex" loading="lazy" onerror="this.style.opacity='0'">
+                <span class="hero-benefit-logo-fallback">Cinemex</span>
+              </div>
+              <div class="hero-benefit-content">
+                <div class="hero-benefit-body">
+                  <h4 class="font-title">Hasta 40% de descuento en Cinemex</h4>
+                </div>
+                <div class="hero-benefit-footer">
+                  <a href="https://www.soymas.la/beneficios" class="hero-benefit-cta" rel="noopener noreferrer">Ver detalle →</a>
+                  <span class="hero-benefit-cat cat-entretenimiento">Entretenimiento</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-benefit-card" data-category="salud">
+              <div class="hero-benefit-logo hero-benefit-logo--auna">
+                <img src="assets/img/logos/auna.jpg" alt="AUNA" loading="lazy" onerror="this.style.opacity='0'">
+                <span class="hero-benefit-logo-fallback">auna</span>
+              </div>
+              <div class="hero-benefit-content">
+                <div class="hero-benefit-body">
+                  <h4 class="font-title">Seguro oncológico con revisión anual incluida</h4>
+                </div>
+                <div class="hero-benefit-footer">
+                  <a href="https://www.soymas.la/beneficios" class="hero-benefit-cta" rel="noopener noreferrer">Ver detalle →</a>
+                  <span class="hero-benefit-cat cat-salud">Salud</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-benefit-card" data-category="entretenimiento">
+              <div class="hero-benefit-logo hero-benefit-logo--aztlan">
+                <img src="assets/img/logos/aztlan.jpg" alt="Aztlán" loading="lazy" onerror="this.style.opacity='0'">
+                <span class="hero-benefit-logo-fallback">AZTLÁN</span>
+              </div>
+              <div class="hero-benefit-content">
+                <div class="hero-benefit-body">
+                  <h4 class="font-title">50% de descuento en Aztlán Park</h4>
+                </div>
+                <div class="hero-benefit-footer">
+                  <a href="https://www.soymas.la/beneficios" class="hero-benefit-cta" rel="noopener noreferrer">Ver detalle →</a>
+                  <span class="hero-benefit-cat cat-entretenimiento">Entretenimiento</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="hero-slider-controls">
+            <div class="hero-dots" id="hero-dots">
+              <button class="hero-dot active" data-index="0" aria-label="WOOW"></button>
+              <button class="hero-dot" data-index="1" aria-label="iSURE"></button>
+              <button class="hero-dot" data-index="2" aria-label="ITAM"></button>
+              <button class="hero-dot" data-index="3" aria-label="Cinemex"></button>
+              <button class="hero-dot" data-index="4" aria-label="AUNA"></button>
+              <button class="hero-dot" data-index="5" aria-label="Aztlán"></button>
+            </div>
+            <div class="hero-nav-btns">
+              <button class="hero-nav-btn" id="hero-prev" aria-label="Beneficio anterior">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+                </svg>
+              </button>
+              <button class="hero-nav-btn" id="hero-next" aria-label="Siguiente beneficio">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <!-- /hero-slider-wrap -->
+
+        <!-- CTAs principales -->
+        <div class="hero-ctas">
+          <a href="https://www.soymas.la/membresias" class="btn-hero-primary" rel="noopener noreferrer">
+            Obtén tu membresía
+            <svg style="width:16px;height:16px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="https://www.soymas.la/beneficios" class="btn-hero-outline" rel="noopener noreferrer">Ver todos los beneficios</a>
+        </div>
+
+        <!-- Pills de categoría debajo de los botones -->
+        <div class="hero-filters" id="hero-filters" style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1.1rem;">
+          <button class="hero-filter-btn hero-benefit-cat active" data-filter="all">Todos</button>
+          <button class="hero-filter-btn hero-benefit-cat cat-seguros" data-filter="seguros">Seguros</button>
+          <button class="hero-filter-btn hero-benefit-cat cat-salud" data-filter="salud">Salud</button>
+          <button class="hero-filter-btn hero-benefit-cat cat-finanzas" data-filter="finanzas">Finanzas</button>
+          <button class="hero-filter-btn hero-benefit-cat cat-entretenimiento" data-filter="entretenimiento">Diversión</button>
+        </div>
+
+      </div>
+      <!-- /hero-copy -->
+
+      <!-- ── Columna derecha: Video ── -->
+      <div class="hero-video-wrap">
+        <div class="hero-video-container">
+          <iframe
+            src="https://www.youtube.com/embed/HaBvrIDY-ro?autoplay=1&mute=1&loop=1&playlist=HaBvrIDY-ro&rel=0&modestbranding=1&controls=1"
+            title="Soy+ — Conoce todos tus beneficios"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <p class="hero-video-label">▶ Conoce Soy+ en menos de 2 minutos</p>
+      </div>
+      <!-- /hero-video-wrap -->
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       BLOQUE 2: ¿Qué es Soy+?
+  ══════════════════════════════════════════════════════════ -->
+  <section class="bg-section-dark" id="que-es" style="padding:4.5rem 1.5rem;">
+    <div class="container">
+
+      <div style="text-align:center; margin-bottom:2.5rem;">
+        <span class="hero-eyebrow" style="display:inline-block;">Membresía de bienestar</span>
+        <h2 class="font-title" style="font-size:clamp(1.7rem,4vw,2.6rem); font-weight:700; color:var(--color-base-content); line-height:1.2; margin-top:0.75rem; margin-bottom:0.75rem;">
+          Todo lo que <span style="color:var(--color-secondary);">Soy+ incluye</span> para ti
+        </h2>
+        <p style="font-size:0.95rem; color:var(--color-base-content); opacity:0.70; max-width:520px; margin:0 auto; line-height:1.7;">
+          Una membresía diseñada para que disfrutes más, gastes menos y tengas acceso a lo que realmente importa.
+        </p>
+      </div>
+
+      <div id="que-es-grid">
+
+        <!-- Col 1: Qué incluye -->
+        <div class="que-es-card">
+          <div class="que-es-icon">
+            <svg style="width:22px;height:22px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+          </div>
+          <h3 class="font-title" style="font-size:1.05rem; font-weight:700; color:var(--color-base-content);">Qué incluye</h3>
+          <ul class="que-es-list">
+            <li>Entretenimiento: Cinépolis, Disney y más</li>
+            <li>Salud integral: dental y medicamentos con descuento</li>
+            <li>Viajes: hoteles a precios preferenciales</li>
+            <li>Servicios: seguros, préstamos y cuidado en casa</li>
+            <li>Contenido editorial exclusivo todos los días</li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Para quién es -->
+        <div class="que-es-card">
+          <div class="que-es-icon">
+            <svg style="width:22px;height:22px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-title" style="font-size:1.05rem; font-weight:700; color:var(--color-base-content);">Para quién es</h3>
+          <p style="font-size:0.875rem; color:var(--color-base-content); opacity:0.78; line-height:1.65;">
+            Soy+ está pensada para mexicanos mayores de 45 años que quieren aprovechar mejor su tiempo y dinero — y para toda su familia.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.25rem;">
+            <span class="que-es-tag">45+ años</span>
+            <span class="que-es-tag">Toda la familia</span>
+            <span class="que-es-tag">Generación silver</span>
+          </div>
+        </div>
+
+        <!-- Col 3: Cómo funciona -->
+        <div class="que-es-card">
+          <div class="que-es-icon">
+            <svg style="width:22px;height:22px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="font-title" style="font-size:1.05rem; font-weight:700; color:var(--color-base-content);">Cómo funciona</h3>
+          <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.25rem;">
+            <div class="que-es-step">
+              <span class="que-es-step-num">1</span>
+              <span><strong style="font-weight:600;">Regístrate en línea</strong> en menos de 5 minutos desde cualquier dispositivo.</span>
+            </div>
+            <div class="que-es-step">
+              <span class="que-es-step-num">2</span>
+              <span><strong style="font-weight:600;">Activa tu membresía</strong> y accede de inmediato a todos los beneficios.</span>
+            </div>
+            <div class="que-es-step">
+              <span class="que-es-step-num">3</span>
+              <span><strong style="font-weight:600;">Empieza a ahorrar</strong> en salud, entretenimiento, viajes y más.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Badge de valor + CTAs -->
+      <div class="que-es-cta-wrap">
+        <div class="que-es-value-badge">
+          <span style="font-size:0.78rem; color:var(--color-base-content); opacity:0.60; font-family:'Space Grotesk',sans-serif; font-weight:500;">Valor estimado de beneficios</span>
+          <span class="font-title" style="font-size:1.4rem; font-weight:800; color:var(--color-success);">más de $50,000<span style="font-size:0.9rem; font-weight:500; opacity:0.70;">/año</span></span>
+          <span style="font-size:0.78rem; color:var(--color-base-content); opacity:0.50;">Solo con tu membresía de $480/año</span>
+        </div>
+        <div style="display:flex; gap:0.875rem; flex-wrap:wrap; justify-content:center;">
+          <a href="https://www.soymas.la/membresias" class="btn-hero-primary" rel="noopener noreferrer">
+            Suscríbete ahora
+            <svg style="width:15px;height:15px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="https://www.soymas.la/beneficios" class="btn-hero-outline" rel="noopener noreferrer">Ver todos los planes</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       BLOQUE 3: Herramientas — Buscador de medicamentos
+  ══════════════════════════════════════════════════════════ -->
+  <section class="bg-section-herramientas section-divider" id="medicamentos" style="padding:4.5rem 1.5rem;">
+    <div class="container">
+      <div id="herramientas-grid">
+
+        <!-- Columna texto -->
+        <div>
+          <span class="hero-eyebrow" style="display:inline-block; margin-bottom:1rem;">Herramienta #1 de Soy+</span>
+          <h2 class="font-title" style="font-size:clamp(1.7rem,4vw,2.4rem); font-weight:700; color:var(--color-base-content); line-height:1.2; margin-bottom:1rem;">
+            Consulta el precio de tus <span style="color:var(--color-secondary);">medicamentos</span>
+          </h2>
+          <p style="font-size:0.95rem; color:var(--color-base-content); opacity:0.72; line-height:1.75; margin-bottom:1.5rem; max-width:480px;">
+            El beneficio más visitado de Soy+: encuentra precios, disponibilidad y descuentos en más de 30,000 medicamentos con entrega a domicilio en todo México.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.75rem;">
+            <div class="herramientas-feature">
+              <svg style="width:16px;height:16px;flex-shrink:0;color:var(--color-success);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              Antivirales, antibióticos, antidepresivos y más
+            </div>
+            <div class="herramientas-feature">
+              <svg style="width:16px;height:16px;flex-shrink:0;color:var(--color-success);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              25% de descuento personalizado en tu pedido
+            </div>
+            <div class="herramientas-feature">
+              <svg style="width:16px;height:16px;flex-shrink:0;color:var(--color-success);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              Entrega a domicilio en todo México
+            </div>
+          </div>
+          <a href="https://www.soymas.la/medicamentos" class="btn-hero-primary" rel="noopener noreferrer">
+            Buscar mi medicamento
+            <svg style="width:15px;height:15px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Columna visual (mockup) -->
+        <div class="herramientas-visual">
+          <p class="font-title" style="font-size:0.78rem; font-weight:600; color:var(--color-base-content); opacity:0.50; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.75rem;">Buscar medicamento</p>
+          <div class="med-search-mock">
+            <svg style="width:17px;height:17px;opacity:0.40;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0z"/>
+            </svg>
+            <input type="text" placeholder="Ej: Metformina, Losartán, Amoxicilina..." disabled aria-label="Buscar medicamento">
+            <button>Buscar</button>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+            <span class="med-chip">Antivirales</span>
+            <span class="med-chip">Antibióticos</span>
+            <span class="med-chip">Antidepresivos</span>
+            <span class="med-chip">Antihipertensivos</span>
+            <span class="med-chip">Analgésicos</span>
+            <span class="med-chip">Vitaminas</span>
+          </div>
+          <div style="margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid var(--border-divider);">
+            <p style="font-size:0.8rem; color:var(--color-base-content); opacity:0.45; line-height:1.5;">
+              Disponible para miembros Soy+ · 25% en tu primer pedido
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── SECTION 1: Lo más nuevo para ti ── -->
+  <section class="bg-section-1" style="padding:5.5rem 1.5rem 2.5rem;">
+    <div class="container">
+
+      <div style="margin-bottom:1.5rem;">
+        <h2 class="font-title" style="font-size:clamp(1.6rem,3.5vw,2.4rem); font-weight:700; color:var(--color-base-content); margin-bottom:0.5rem; line-height:1.2;">
+          Lo <span style="color:var(--color-secondary);">más nuevo</span> para ti
+        </h2>
+        <p style="font-size:0.95rem; color:var(--color-base-content); opacity:0.75; line-height:1.6;">
+          Cada día es una oportunidad para seguir escribiendo tu historia.<br>
+          Descubre lo que tenemos pensado para ti.
+        </p>
+      </div>
+
+      <div id="news-grid">
+
+        <!-- Card principal -->
+        <div class="card-featured">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80"
+               alt="Dr. Francisco Moreno"
+               style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.65;">
+          <div class="overlay-featured"></div>
+          <div style="position:absolute; top:0; right:0; bottom:0; width:56%; padding:1.75rem; display:flex; flex-direction:column; justify-content:center; gap:0.6rem;">
+            <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap; margin-bottom:0.1rem;">
+              <span class="hero-benefit-cat cat-salud">Salud</span>
+              <span class="article-label">Artículo</span>
+            </div>
+            <h3 class="font-title" style="font-size:1.15rem; font-weight:700; color:var(--color-base-content); line-height:1.35;">
+              El Dr. Francisco Moreno llega a Soy Más para resolver tus dudas sobre salud en la generación silver
+            </h3>
+            <p class="line-clamp-3" style="font-size:0.82rem; color:var(--color-base-content); opacity:0.75; line-height:1.5;">
+              Con una trayectoria de más de 30 años y una voz reconocida en salud pública, el especialist...
+            </p>
+            <div class="text-muted" style="display:flex; align-items:center; gap:0.75rem; margin-top:0.5rem; font-size:0.75rem;">
+              <span>27 mar 2026</span>
+              <span style="display:flex; align-items:center; gap:3px;">
+                <svg style="width:12px;height:12px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+                3 min
+              </span>
+            </div>
+            <a href="https://www.soymas.la/contenido" class="card-featured-cta" rel="noopener noreferrer">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Side cards -->
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+
+          <div class="card-side-item">
+            <div class="card-side-thumb">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Educación financiera" loading="lazy">
+            </div>
+            <div class="card-side-body">
+              <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+                <span class="hero-benefit-cat cat-finanzas">Finanzas</span>
+                <span class="article-label">Artículo</span>
+              </div>
+              <p class="font-title line-clamp-2" style="font-size:0.85rem; font-weight:600; color:var(--color-base-content); line-height:1.3;">¿Y si las mujeres nos enseñan de educación financiera?</p>
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.25rem;">
+                <span class="card-side-time">
+                  <svg style="width:11px;height:11px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
+                    <circle cx="12" cy="12" r="10"/>
+                  </svg>
+                  2 min
+                </span>
+                <a href="https://www.soymas.la/contenido" class="card-side-cta" rel="noopener noreferrer">Leer más →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-side-item">
+            <div class="card-side-thumb">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&q=80" alt="Padres y abuelos" loading="lazy">
+            </div>
+            <div class="card-side-body">
+              <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+                <span class="hero-benefit-cat cat-bienestar">Bienestar</span>
+                <span class="article-label">Artículo</span>
+              </div>
+              <p class="font-title line-clamp-2" style="font-size:0.85rem; font-weight:600; color:var(--color-base-content); line-height:1.3;">¿Cómo lograr que padres, abuelos y...</p>
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.25rem;">
+                <span class="card-side-time">
+                  <svg style="width:11px;height:11px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
+                    <circle cx="12" cy="12" r="10"/>
+                  </svg>
+                  4 min
+                </span>
+                <a href="https://www.soymas.la/contenido" class="card-side-cta" rel="noopener noreferrer">Leer más →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-side-item">
+            <div class="card-side-thumb">
+              <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=200&q=80" alt="Semana de vacaciones" loading="lazy">
+            </div>
+            <div class="card-side-body">
+              <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+                <span class="hero-benefit-cat cat-ocio">Ocio</span>
+                <span class="article-label">Artículo</span>
+              </div>
+              <p class="font-title line-clamp-2" style="font-size:0.85rem; font-weight:600; color:var(--color-base-content); line-height:1.3;">Semana de vacaciones con lo...</p>
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.25rem;">
+                <span class="card-side-time">
+                  <svg style="width:11px;height:11px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
+                    <circle cx="12" cy="12" r="10"/>
+                  </svg>
+                  3 min
+                </span>
+                <a href="https://www.soymas.la/contenido" class="card-side-cta" rel="noopener noreferrer">Leer más →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── SECTION 2: Carousel beneficios ── -->
+  <section class="bg-section-benefits section-divider" style="padding:2.5rem 0;">
+    <div class="container">
+      <div class="carousel-track">
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <span class="font-title" style="font-size:1.3rem; font-weight:800; color:var(--color-base-content);">P</span>
+          </div>
+          <div class="benefit-body">
+            <span class="hero-benefit-cat cat-finanzas">Finanzas</span>
+            <p class="font-title" style="font-size:0.9rem; font-weight:600; color:var(--color-base-content); line-height:1.4;">Haz que tu ahorro trabaje por ti con Profuturo Afore</p>
+            <span class="benefit-value">Haz crecer tu retiro</span>
+          </div>
+        </div>
+
+        <div class="benefit-card highlighted">
+          <div class="benefit-icon" style="width:80px; border-radius:12px;">
+            <span class="font-title" style="font-size:0.65rem; font-weight:700; color:var(--color-base-content); text-align:center; line-height:1.3;">Profuturo<br>PRÉSTAMOS</span>
+          </div>
+          <div class="benefit-body">
+            <span class="hero-benefit-cat cat-finanzas">Finanzas</span>
+            <p class="font-title" style="font-size:0.9rem; font-weight:600; color:var(--color-base-content); line-height:1.4;">Obtén un préstamo en menos de 48 horas de hasta 8 veces tu pensión mensual</p>
+            <span class="benefit-value">Hasta 8× tu pensión</span>
+          </div>
+        </div>
+
+        <div class="benefit-card highlighted">
+          <div class="benefit-icon">
+            <span class="font-title" style="font-size:0.75rem; font-weight:700; color:var(--color-base-content);">KALONI</span>
+          </div>
+          <div class="benefit-body">
+            <span class="hero-benefit-cat cat-belleza">Belleza</span>
+            <p class="font-title" style="font-size:0.9rem; font-weight:600; color:var(--color-base-content); line-height:1.4;">Kaloni Science Center – estética y bienestar</p>
+            <span class="benefit-value">Descuentos exclusivos</span>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div style="width:80px; height:44px; border-radius:10px; background:#000; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <span style="font-size:1.1rem; font-weight:900; color:#ffcf72; letter-spacing:-0.04em;">woow</span>
+          </div>
+          <div class="benefit-body">
+            <span class="hero-benefit-cat cat-seguros">Seguros</span>
+            <p class="font-title" style="font-size:0.9rem; font-weight:600; color:var(--color-base-content); line-height:1.4;">Oferta Integral de asistencias, seguros, servicios, y más</p>
+            <span class="benefit-value">Protección desde $0 extra</span>
+          </div>
+        </div>
+
+        <div class="benefit-card highlighted">
+          <div style="width:80px; height:44px; border-radius:10px; background:var(--color-azul-oscuro); border:1px solid var(--ring-card); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <span style="font-size:0.85rem; font-weight:800; color:#fff;">iiSURE</span>
+          </div>
+          <div class="benefit-body">
+            <span class="hero-benefit-cat cat-seguros">Seguros</span>
+            <p class="font-title" style="font-size:0.9rem; font-weight:600; color:var(--color-base-content); line-height:1.4;">Protección integral e inteligente, contratación 100% digital</p>
+            <span class="benefit-value">Contratación 100% digital</span>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <span class="font-title" style="font-size:1.2rem; font-weight:800; color:var(--color-base-content);">C</span>
+          </div>
+          <div class="benefit-body">
+            <span class="hero-benefit-cat cat-entretenimiento">Entretenimiento</span>
+            <p class="font-title" style="font-size:0.9rem; font-weight:600; color:var(--color-base-content); line-height:1.4;">Disfruta de precios especiales en cine y experiencias</p>
+            <span class="benefit-value">Hasta 40% descuento</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carousel-prev" aria-label="Anterior beneficio">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <div class="dots">
+          <button class="dot" aria-label="Beneficio 1"></button><button class="dot" aria-label="Beneficio 2"></button><button class="dot" aria-label="Beneficio 3"></button>
+          <button class="dot" aria-label="Beneficio 4"></button><button class="dot" aria-label="Beneficio 5"></button><button class="dot active" aria-label="Beneficio 6"></button>
+          <button class="dot" aria-label="Beneficio 7"></button><button class="dot" aria-label="Beneficio 8"></button><button class="dot" aria-label="Beneficio 9"></button><button class="dot" aria-label="Beneficio 10"></button>
+        </div>
+        <button class="carousel-btn" id="carousel-next" aria-label="Siguiente beneficio">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+      <div style="text-align:center; margin-top:1.5rem;">
+        <a href="https://www.soymas.la/beneficios" class="btn-hero-primary" rel="noopener noreferrer">
+          Ver todos los beneficios
+          <svg style="width:15px;height:15px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── SECTION 3: La más vista / La favorita ── -->
+  <section class="bg-section-1" style="padding:2.5rem 1.5rem;">
+    <div class="container">
+      <div id="popular-grid">
+
+        <div>
+          <h2 class="font-title" style="font-size:clamp(1.4rem,3vw,2rem); font-weight:700; color:var(--color-warning); text-align:center; margin-bottom:1rem;">La más vista</h2>
+          <div style="border-radius:24px; overflow:hidden; position:relative; height:340px; background:var(--bg-card-featured);">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=80" alt="" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
+            <div class="overlay-top"></div>
+            <div style="position:absolute; top:1rem; left:1.25rem; display:flex; align-items:center; gap:0.5rem;">
+              <span class="font-title" style="font-size:1rem; font-weight:700; color:#fff;">Soy+</span>
+              <span style="font-size:0.8rem; color:rgba(255,255,255,0.7);">| Con el Doctor Moreno</span>
+            </div>
+          </div>
+          <h3 class="font-title" style="font-size:1rem; font-weight:700; color:var(--color-base-content); text-align:center; margin-top:0.75rem; line-height:1.4;">El Dr. Francisco Moreno llega a Soy Más...</h3>
+          <p style="font-size:0.8rem; color:var(--color-base-content); opacity:0.7; text-align:center; margin-top:0.4rem; line-height:1.5;">Con una trayectoria de más de 30 años y una voz reconocida en salud pública...</p>
+        </div>
+
+        <div>
+          <h2 class="font-title" style="font-size:clamp(1.4rem,3vw,2rem); font-weight:700; color:var(--color-warning); text-align:center; margin-bottom:1rem;">La favorita</h2>
+          <div style="border-radius:24px; overflow:hidden; position:relative; height:340px; background:var(--bg-card-featured);">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=80" alt="" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
+            <div class="overlay-top"></div>
+          </div>
+          <h3 class="font-title" style="font-size:1rem; font-weight:700; color:var(--color-base-content); text-align:center; margin-top:0.75rem; line-height:1.4;">¿Y si las mujeres nos enseñan de educación financiera?</h3>
+          <p style="font-size:0.8rem; color:var(--color-base-content); opacity:0.7; text-align:center; margin-top:0.4rem; line-height:1.5;">A través de datos, creatividad y reflexión, la iniciativa artística impulsada por Profuturo...</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── SECTION 4: Testimonios ── -->
+  <section class="bg-section-dark" style="padding:3rem 1.5rem;">
+    <div class="container">
+
+      <h2 class="font-title" style="font-size:clamp(1.5rem,3.5vw,2.3rem); font-weight:700; color:var(--color-base-content); text-align:center; margin-bottom:2.5rem; line-height:1.25;">
+        La voz de quienes <span style="color:var(--color-secondary);">ya son más</span>
+      </h2>
+
+      <div id="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <svg class="quote-icon" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8C6.686 8 4 10.686 4 14v10h8V14H6c0-2.206 1.794-4 4-4V8zm14 0c-3.314 0-6 2.686-6 6v10h8V14h-6c0-2.206 1.794-4 4-4V8z"/></svg>
+            <span class="text-muted" style="font-size:0.72rem;">9 de sep, 2025</span>
+          </div>
+          <p style="font-size:0.875rem; color:var(--color-base-content); opacity:0.85; line-height:1.7; flex:1;">
+            Un día pedí un masaje con SCAPE y, mientras navegaba, encontré artículos súper útiles para mi mamá de 70 años. Me encanta que Soy Más piense en toda mi familia.
+          </p>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="" style="width:40px; height:40px; border-radius:9999px; object-fit:cover; flex-shrink:0;">
+            <span style="font-size:0.85rem; font-weight:600; color:var(--color-base-content);">Carolina L., 48 años.</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <svg class="quote-icon" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8C6.686 8 4 10.686 4 14v10h8V14H6c0-2.206 1.794-4 4-4V8zm14 0c-3.314 0-6 2.686-6 6v10h8V14h-6c0-2.206 1.794-4 4-4V8z"/></svg>
+            <span class="text-muted" style="font-size:0.72rem;">10 de sep, 2025</span>
+          </div>
+          <p style="font-size:0.875rem; color:var(--color-base-content); opacity:0.85; line-height:1.7; flex:1;">
+            Uso la app de Cinépolis con mis hijos y, como viajo seguido, también aprovecho los beneficios en hoteles. Soy Más me facilita algunas experiencias y hace mis viajes más cómodos.
+          </p>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <img src="https://images.unsplash.com/photo-1553867745-6e6b25e01f1b?w=80&q=80" alt="" style="width:40px; height:40px; border-radius:9999px; object-fit:cover; flex-shrink:0;">
+            <span style="font-size:0.85rem; font-weight:600; color:var(--color-base-content);">Luigi A., 64 años.</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <svg class="quote-icon" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8C6.686 8 4 10.686 4 14v10h8V14H6c0-2.206 1.794-4 4-4V8zm14 0c-3.314 0-6 2.686-6 6v10h8V14h-6c0-2.206 1.794-4 4-4V8z"/></svg>
+            <span class="text-muted" style="font-size:0.72rem;">10 de sep, 2025</span>
+          </div>
+          <p style="font-size:0.875rem; color:var(--color-base-content); opacity:0.85; line-height:1.7; flex:1;">
+            Me uní a Soy Más para leer sobre salud y terminé encontrando mejores opciones para mi seguro médico. Me siento acompañada y con más confianza para seguir cuidándome.
+          </p>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=80&q=80" alt="" style="width:40px; height:40px; border-radius:9999px; object-fit:cover; flex-shrink:0;">
+            <span style="font-size:0.85rem; font-weight:600; color:var(--color-base-content);">Ale A., 68 años.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── SECTION 5: Features / CTA ── -->
+  <section class="bg-section-features" style="padding:3.5rem 1.5rem;">
+    <div class="container">
+      <div id="features-grid">
+
+        <div>
+          <h2 class="font-title" style="font-size:clamp(2rem,5vw,3.2rem); font-weight:700; line-height:1.15; margin-bottom:1.25rem;">
+            <span style="color:var(--color-primary);">Tu espacio para vivir y<br>seguir creciendo con más </span><span style="color:var(--color-base-content);">propósito, independencia,<br>plenitud y diversión.</span>
+          </h2>
+          <p style="font-size:0.95rem; color:var(--color-base-content); opacity:0.8; line-height:1.7; margin-bottom:1.25rem; max-width:560px;">
+            Aquí encuentras ideas para reinventarte: planes para cambiar la rutina, inspiración para cuidarte, formas de ahorrar y descubrir nuevas pasiones.
+          </p>
+          <p style="font-size:0.95rem; font-weight:600; font-style:italic; color:var(--color-warning); margin-bottom:2rem; line-height:1.6;">
+            Disfruta más con tu familia y amigos para seguir construyendo tu historia a tu ritmo.
+          </p>
+          <button class="btn-primary">Suscríbete</button>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+
+          <div class="feature-card">
+            <div style="position:relative; width:72px; height:72px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <span class="feat-num">01</span>
+              <span style="font-size:2rem; position:relative; z-index:1;">🕶️</span>
+            </div>
+            <div style="flex:1;">
+              <h3 class="font-title" style="font-size:1.05rem; font-weight:700; color:var(--color-base-content); margin-bottom:0.3rem;">Entrevistas, guías y consejos</h3>
+              <p style="font-size:0.82rem; color:var(--color-base-content); opacity:0.75; line-height:1.55; margin-bottom:0.6rem;">Contenido nuevo todos los días para tomar decisiones que hoy te importan.</p>
+              <button class="btn-warning">Ver más</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div style="position:relative; width:72px; height:72px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <span class="feat-num">02</span>
+              <span style="font-size:2rem; position:relative; z-index:1;">💳</span>
+            </div>
+            <div style="flex:1;">
+              <h3 class="font-title" style="font-size:1.05rem; font-weight:700; color:var(--color-base-content); margin-bottom:0.3rem;">Experiencias y beneficios</h3>
+              <p style="font-size:0.82rem; color:var(--color-base-content); opacity:0.75; line-height:1.55; margin-bottom:0.6rem;">Accede a precios preferenciales con aliados que te acompañan a construir historias.</p>
+              <button class="btn-warning">Ver más</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div style="position:relative; width:72px; height:72px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <span class="feat-num">03</span>
+              <span style="font-size:2rem; position:relative; z-index:1;">🎲</span>
+            </div>
+            <div style="flex:1;">
+              <h3 class="font-title" style="font-size:1.05rem; font-weight:700; color:var(--color-base-content); margin-bottom:0.3rem;">Juegos y trivias</h3>
+              <p style="font-size:0.82rem; color:var(--color-base-content); opacity:0.75; line-height:1.55; margin-bottom:0.6rem;">Diviértete, aprende y activa tu mente. Date esa pausa de la rutina.</p>
+              <button class="btn-warning">Ver más</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer class="bg-footer" style="border-top:1px solid var(--border-divider); padding:2.5rem 1.5rem 1.75rem;">
+    <div class="container">
+
+      <div id="footer-grid">
+
+        <div>
+          <h4 class="font-title" style="font-weight:700; color:var(--color-base-content); margin-bottom:0.75rem; font-size:0.95rem;">Perfil</h4>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.4rem;">
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Mi cuenta</a></li>
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Preferencias</a></li>
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Método de pago</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-title" style="font-weight:700; color:var(--color-base-content); margin-bottom:0.75rem; font-size:0.95rem;">Nosotros</h4>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.4rem;">
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Acerca de Soy Más</a></li>
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-title" style="font-weight:700; color:var(--color-base-content); margin-bottom:0.75rem; font-size:0.95rem;">Legal</h4>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.4rem;">
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Términos y Condiciones</a></li>
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Aviso de Privacidad</a></li>
+            <li><a href="#" class="nav-link" style="font-size:0.85rem;">Uso de Cookies</a></li>
+          </ul>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1rem; align-items:flex-start;">
+
+          <!-- ★ TOGGLE ★ -->
+          <div class="toggle-wrap" id="theme-toggle">
+            <span class="toggle-label" id="toggle-label">Modo oscuro</span>
+            <div class="toggle-pill">
+              <div class="toggle-thumb"></div>
+            </div>
+          </div>
+
+          <!-- Redes -->
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <a href="#" class="social-icon">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="border-top:1px solid var(--border-divider); padding-top:1.25rem; text-align:right;">
+        <p style="font-size:0.8rem; color:var(--color-base-content); opacity:0.4;">© Soy Más | Todos los derechos reservados, 2026.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
